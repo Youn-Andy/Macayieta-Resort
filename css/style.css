@@ -20,7 +20,7 @@ body{
   /* Position the navbar container inside the image */
   .container {
     position: absolute;
-    margin: 20px;
+    margin: a;
     width: auto;
   }
   
@@ -46,7 +46,8 @@ body{
   }
   * The sidebar menu */
 .sidenav {
-  width: auto; /* Set the width of the sidebar */
+  width: 30%; /* Set the width of the sidebar */
+  float: left;
   position: left; /* Fixed Sidebar (stay in place on scroll) */
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
@@ -78,6 +79,7 @@ body{
 }
 .right {
     position: absolute;
+    float: left;
     right: 0px;
     width: 600px;
     border: 3px solid #73AD21;
@@ -91,4 +93,15 @@ body{
 }
 .strong{
     text-align: center;
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  body {
+      background-color: black;
+      color: white;
+  }
+}
+@media screen and (min-width: 768px) {
+body {
+  background-color: rgb(175, 209, 218);
+}
 }
